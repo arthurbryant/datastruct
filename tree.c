@@ -12,7 +12,7 @@ Tree createTree(Tree t)
         t = NULL;
     else
     {
-        t = malloc(sizeof(struct node));
+        t = (Tree)malloc(sizeof(struct node));
         t->data = k;
         t->left = t->right = NULL;
         t->left = createTree(t1);
